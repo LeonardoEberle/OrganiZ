@@ -1,0 +1,74 @@
+# ============================================================
+# .gitignore — OrganiZ (ASP.NET Core + React/Vite)
+# ============================================================
+
+# ─── .NET / ASP.NET Core ────────────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.swp
+*.swap
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Publicação
+publish/
+**/Properties/PublishProfiles/
+
+# NuGet
+*.nupkg
+*.snupkg
+**/packages/
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+
+# Logs de build
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Cobertura de testes / resultados
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# ─── Node / React / Vite ────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Cache do Vite
+.vite/
+
+# Dependências do npm/yarn/pnpm
+.pnpm-store/
+.yarn/
+yarn-error.log
+npm-debug.log*
+yarn-debug.log*
+
+# ─── Variáveis de ambiente / segredos ───────────────────────
+.env
+.env.local
+.env.*.local
+appsettings.Development.json
+secrets.json
+
+# ─── IDEs e Editores ────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+
+# ─── Sistema Operacional ────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.DS_Store
+ehthumbs.db
